@@ -141,7 +141,7 @@ cv_button.on("click", function() {
     excel.html("");
 
     let excel_panel = d3.select("#excel-panel");
-    excel_panel.html("<iframe src='Resume_tech_wprojects.html' width='500' height='500'><p>This browser may not support iframes.</p></iframe>");
+    excel_panel.html("<iframe src='resume_tech_wprojects_pdf.pdf' width='500' height='500'><p>This browser may not support iframes.</p></iframe>");
 
     let title_2 = d3.select("#title-2");
     title_2.html("");
