@@ -4,7 +4,7 @@ projects_button.on("click", function() {
     d3.event.preventDefault();
 
     projects_button.classed("active", true);
-    aboutme_button.classed("active", false);
+    // aboutme_button.classed("active", false);    
     cv_button.classed("active", false);
 
     let bottom_row = d3.select("#project-2");
@@ -52,56 +52,56 @@ projects_button.on("click", function() {
 
 });
 
-const aboutme_button = d3.select("#aboutme-btn");
-aboutme_button.on("click", function() {
+// const aboutme_button = d3.select("#aboutme-btn");
+// aboutme_button.on("click", function() {
 
-    d3.event.preventDefault();
+//     d3.event.preventDefault();
 
-    projects_button.classed("active", false);
-    aboutme_button.classed("active", true);
-    cv_button.classed("active", false);
+//     projects_button.classed("active", false);
+//     aboutme_button.classed("active", true);
+//     cv_button.classed("active", false);
 
-    let bottom_row = d3.select("#project-2");
-    bottom_row.classed("bottom-problem", false);
+//     let bottom_row = d3.select("#project-2");
+//     bottom_row.classed("bottom-problem", false);
 
-    let excel_title = d3.select("#title-2");
-    excel_title.classed("bottom-problem-2", false);
+//     let excel_title = d3.select("#title-2");
+//     excel_title.classed("bottom-problem-2", false);
 
-    let title = d3.select("#title");
-    title.html("");
-    title.html("About Me");
+//     let title = d3.select("#title");
+//     title.html("");
+//     title.html("About Me");
 
-    let panel_img = d3.select("#panel-img");
-    panel_img.html("");
+//     let panel_img = d3.select("#panel-img");
+//     panel_img.html("");
 
-    let panel = d3.select("#panel");
-    panel.html("");
+//     let panel = d3.select("#panel");
+//     panel.html("");
 
-    let panel_img_2 = d3.select("#panel-img-2");
-    panel_img_2.html("");
+//     let panel_img_2 = d3.select("#panel-img-2");
+//     panel_img_2.html("");
 
-    let panel_2 = d3.select("#panel-2");
-    panel_2.html("");
+//     let panel_2 = d3.select("#panel-2");
+//     panel_2.html("");
 
-    let tableau_panel = d3.select("#tableau-panel");
-    tableau_panel.html("<iframe src> </iframe>");
+//     let tableau_panel = d3.select("#tableau-panel");
+//     tableau_panel.html("<iframe src> </iframe>");
 
-    let excel = d3.select("#excel");
-    excel.html("");
+//     let excel = d3.select("#excel");
+//     excel.html("");
 
-    let excel_panel = d3.select("#excel-panel");
-    excel_panel.html("");
+//     let excel_panel = d3.select("#excel-panel");
+//     excel_panel.html("");
     
-    let title_2 = d3.select("#title-2");
-    title_2.html("");
+//     let title_2 = d3.select("#title-2");
+//     title_2.html("More coming soon!");
 
-    let excel_2 = d3.select("#excel-2");
-    excel_2.html("");
+//     let excel_2 = d3.select("#excel-2");
+//     excel_2.html("");
 
-    let excel_panel_2 = d3.select("#excel-panel-2");
-    excel_panel_2.html("");
+//     let excel_panel_2 = d3.select("#excel-panel-2");
+//     excel_panel_2.html("");
 
-});
+// });
 
 const cv_button = d3.select("#cv-btn");
 cv_button.on("click", function() {
@@ -109,7 +109,7 @@ cv_button.on("click", function() {
     d3.event.preventDefault();
 
     projects_button.classed("active", false);
-    aboutme_button.classed("active", false);
+    // aboutme_button.classed("active", false);
     cv_button.classed("active", true);
 
     let bottom_row = d3.select("#project-2");
@@ -141,7 +141,7 @@ cv_button.on("click", function() {
     excel.html("");
 
     let excel_panel = d3.select("#excel-panel");
-    excel_panel.html("<iframe src='Resume_semi_technical_for_portfolio.html' width='500' height='500'><p>This browser may not support iframes.</p></iframe>");
+    excel_panel.html("<iframe src='Resume_tech_wprojects.html' width='500' height='500'><p>This browser may not support iframes.</p></iframe>");
 
     let title_2 = d3.select("#title-2");
     title_2.html("");
